@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import FlipMove from 'react-flip-move';
 import { Button, FormControl, InputLabel, Input } from '@material-ui/core';
+import firebase from 'firebase';
 
+import db from './components/FirebaseConfig/Firebase';
 import Message from './components/Messages/Message';
 
 import './App.css';
@@ -8,25 +11,41 @@ import './App.css';
 function App() {
 
   const [input, setInput] = useState('');
-  const [messages, setMessages] = useState(['hi']);
+  const [messages, setMessages] = useState([]);
   const [username, setUsername] = useState('');
 
+  //roda só quando o app carregar os componentes
   useEffect(() => {
-   const name = prompt('Please enter your name');
+    db.collection('messages').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
+      setMessages(snapshot.docs.map(doc => ({id: doc.id, message: doc.data()})))
+    })
+  }, []);
+  
+  // capturar o nome e entrar como um user
+  useEffect(() => {
+   //const name = prompt('Please enter your name');
+   setUsername(prompt('Please enter your name'));
   }, [])
 
   // função para enviar as menssagens
   const sendMessage = (event) => {
     event.preventDefault();
-    setMessages([...messages, input])
+
+    db.collection('messages').add({
+      message: input,
+      username: username,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
     setInput('');
   }
 
   return (
     <div className="App">
-      <h1>Facebook Messenger Clone</h1>
+      <img src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" />
+      <h1>Facebook Messenger with Nathan</h1>
+      <h2>Welcome {username}</h2>
 
-      <form>
+      <form className="app-form">
         <FormControl>
           <InputLabel>Enter a message...</InputLabel>
           <Input value={input} onChange={event => setInput(event.target.value)} />
@@ -34,12 +53,14 @@ function App() {
         </FormControl>
       </form>
 
-      {/* messages themselves */}
-      {
-        messages.map(message => (
-          <Message text={message} />
-        ))
-      }
+      <FlipMove>
+        {/* messages themselves */}
+        {
+          messages.map(({id, message}) => (
+            <Message key={id} username={username} message={message} />
+          ))
+        }
+      </FlipMove>
     </div>
   );
 }

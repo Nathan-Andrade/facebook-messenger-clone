@@ -1,6 +1,8 @@
 ## Bibliotecas / Linguagens
+- Styled-components
 - Material-UI
 - Firebase
+- React Flip Move
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
