@@ -1,6 +1,7 @@
 ## Bibliotecas / Linguagens
 - Styled-components
-- Material-UI
+- Material-UI/core
+- Material-UI/icons
 - Firebase
 - React Flip Move
 
