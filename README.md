@@ -1,75 +1,70 @@
-## Bibliotecas / Linguagens
-- Styled-components
-- Material-UI/core
-- Material-UI/icons
-- Firebase
-- React Flip Move
+<div align="center">
+   <img src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" alt="Facebook-messenger-logo" width="200px"/>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
 
-## Available Scripts
+<h2 align="center">
+    Facebook Messenger Clone :rocket:
+</h2>
 
-In the project directory, you can run:
+![](https://img.shields.io/github/languages/count/Nathan-Andrade/facebook-messenger-clone?color=%230078FF) ![](https://img.shields.io/github/languages/top/Nathan-Andrade/facebook-messenger-clone?color=%230078FF) ![](https://img.shields.io/github/repo-size/Nathan-Andrade/facebook-messenger-clone?color=%230078FF) ![](https://img.shields.io/github/last-commit/Nathan-Andrade/facebook-messenger-clone?color=%230078FF)
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+## :computer: Projeto
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ Facebook Messenger Clone é um projeto desenvolvido para ter uma total interação com as pessoas assim como no app oficial. Este app foi feito para fins estudantis sobre os conceitos de REact JS no frontend e utilizado o Firebase no Backend para armazenar os dados.
 
-### `yarn build`
+ <p align="center">
+  <img src="https://github.com/Nathan-Andrade/facebook-messenger-clone/blob/master/github-pictures/gifWeb.gif?raw=true" >
+  <h2>Gif web Responsivo</h2>
+  <img src="https://github.com/Nathan-Andrade/facebook-messenger-clone/blob/master/github-pictures/gifWebResposive.gif?raw=true" >
+</p>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ## :airplane: Tecnologias e Bibliotecas
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>Web</summary>
 
-### `yarn eject`
+-   [React](https://pt-br.reactjs.org/)
+-   [Styled Components](https://styled-components.com/)
+-   [Material-UI/core](https://material-ui.com/pt/)
+-   [Material-UI/icons](https://material-ui.com/pt/components/material-icons/#material-icons)
+- [React Flip Move](https://github.com/joshwcomeau/react-flip-move)
+- [Firebase](https://firebase.google.com/)
+-   [VS Code](https://code.visualstudio.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+</details>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :information_source: Como rodar a aplicação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Requerimentos
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Para rodar esta aplicação você vai precisar ter instalado:
+* [Git](https://git-scm.com)
+* [Node](https://nodejs.org/)
+* [Yarn](https://yarnpkg.com/) 
 
-## Learn More
+Agora clone este repositório e instale todas as dependências.
+```bash
+#Para clonar este repositório
+$ git clone https://github.com/Nathan-Andrade/facebook-messenger-clone.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Vá para a pasta do servidor
+$ cd facebook-messenger-clone-master
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#Instale todas as dependências
+$ yarn  install
 
-### Code Splitting
+#Para rodar o server
+$ yarn start
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Desenvolvido com ❤️ por <a href="https://www.linkedin.com/in/nathan-a-1b9436124/">Nathan de Andrade</a>.
