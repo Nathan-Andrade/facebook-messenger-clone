@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import FlipMove from 'react-flip-move';
-import { Button, FormControl, InputLabel, Input } from '@material-ui/core';
+import { FormControl, Input } from '@material-ui/core';
 import firebase from 'firebase';
 import SendIcon from '@material-ui/icons/Send';
 import { IconButton } from '@material-ui/core';
@@ -43,15 +43,14 @@ function App() {
 
   return (
     <div className="App">
-      <img src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" />
+      <img src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" alt="Facebook-messenger-logo" />
       <h1>Facebook Messenger with Nathan</h1>
       <h2>Welcome {username}</h2>
 
       <form className="app-form">
-        <FormControl>
-          <InputLabel>Enter a message...</InputLabel>
-          <Input value={input} onChange={event => setInput(event.target.value)} />
-          <IconButton disabled={!input} variant="contained" color="primary" type="submit" onClick={sendMessage}>
+        <FormControl className="app-formControl">
+          <Input className="app-input" placeholder='Enter a mensage...' value={input} onChange={event => setInput(event.target.value)} />
+          <IconButton className="app-iconButton" disabled={!input} variant="contained" color="primary" type="submit" onClick={sendMessage}>
             <SendIcon />
           </IconButton>
         </FormControl>
