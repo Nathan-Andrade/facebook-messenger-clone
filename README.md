@@ -20,7 +20,7 @@
  <p align="center">
   <img src="https://github.com/Nathan-Andrade/facebook-messenger-clone/blob/master/github-pictures/gifWeb.gif?raw=true" >
   <h2>Gif web Responsivo</h2>
-  <img src="https://github.com/Nathan-Andrade/facebook-messenger-clone/blob/master/github-pictures/gifWebResposive.gif?raw=true" >
+  <img src="" >
 </p>
 
  ## :airplane: Tecnologias e Bibliotecas
