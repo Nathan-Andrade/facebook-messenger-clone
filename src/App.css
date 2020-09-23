@@ -1,5 +1,22 @@
 .App {
   text-align: center;
+  background-color: #f5f5f5;
+}
+
+.app-image{
+  margin: 20px;
+}
+
+.app-title{
+  color: #45433D;
+}
+
+.app-title strong.user{
+  color: #0078FF;
+}
+
+.app-title strong.emoji{
+  color: #FB8C00;
 }
 
 .app-form{

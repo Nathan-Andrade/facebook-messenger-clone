@@ -43,9 +43,10 @@ function App() {
 
   return (
     <div className="App">
-      <img src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" alt="Facebook-messenger-logo" />
-      <h1>Facebook Messenger with Nathan</h1>
-      <h2>Welcome {username}</h2>
+      <img className="app-image" src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" alt="Facebook-messenger-logo" />
+      <h1 className="app-title">
+        Seja Bem-Vindo aos maiorais <strong className="user">{username}</strong> <strong className="emoji">😉😌 </strong>!
+      </h1>
 
       <form className="app-form">
         <FormControl className="app-formControl">
