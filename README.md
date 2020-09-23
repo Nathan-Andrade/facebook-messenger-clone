@@ -18,7 +18,7 @@
  Facebook Messenger Clone é um projeto desenvolvido para ter uma total interação com as pessoas assim como no app oficial. Este app foi feito para fins estudantis sobre os conceitos de REact JS no frontend e utilizado o Firebase no Backend para armazenar os dados.
 
  <p align="center">
-  <img src="https://github.com/Nathan-Andrade/facebook-messenger-clone/blob/master/github-pictures/gifWeb.gif?raw=true" >
+  <img src="" >
   <h2>Gif web Responsivo</h2>
   <img src="https://github.com/Nathan-Andrade/facebook-messenger-clone/blob/master/github-pictures/gifWebResposive.gif?raw=true" >
 </p>
